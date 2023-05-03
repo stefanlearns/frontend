@@ -1,0 +1,38 @@
+<h2>Softverski sistem za predaju naucnih radova</h2>
+
+<h3>Prijava</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <table class="table table-striped table-hover table-sm">
+                <tbody>
+                    <tr>
+                        <td>Korisnicko ime:</td>
+                        <td><input type="text" name="username" [(ngModel)]="username"></td>
+                    </tr>
+                    <tr>
+                        <td>Lozinka:</td>
+                        <td><input type="password" name="lozinka" [(ngModel)]="lozinka"></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+         </div>
+    </div>
+</div>
+
+<br>
+<div>
+    <button (click)="login()">Prijava</button>
+    <br>
+    <a routerLink = "allsales">Zaboravio sam lozinku</a>
+    <br>
+    <a routerLink = "register">Registracija novog Rukovodioca</a>
+</div>
+
+
+
+
+
+
