@@ -11,6 +11,8 @@ import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { AllusersComponent } from './allusers/allusers.component';
 import { AllsalesComponent } from './allsales/allsales.component';
+import { UploadsComponent } from './uploads/uploads.component';
+import { UploadFilesComponent } from './upload-files/upload-files.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { AllsalesComponent } from './allsales/allsales.component';
     UserComponent,
     AllusersComponent,
     AllsalesComponent,
+    UploadsComponent,
+    UploadFilesComponent,
   ],
   imports: [
     BrowserModule,
