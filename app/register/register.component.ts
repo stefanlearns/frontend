@@ -18,11 +18,11 @@ export class RegisterComponent implements OnInit {
     lozinka: string = ""
     ime: string = ""
     prezime: string = ""
-    datumRodjenja!: Date
-    mailRukovodioca: string = "";
-    telefon: string = "";
-    pregledPodnetih: string = "";
-    idInstitucije!: number;
+    datumRodjenja: string = ""
+    mailRukovodioca: string = ""
+    telefon: string = ""
+    pregledPodnetih: string = ""
+    idInstitucije: number = 1
 
 
     register(){
@@ -31,11 +31,17 @@ export class RegisterComponent implements OnInit {
         user.lozinka = this.lozinka
         user.ime = this.ime
         user.prezime = this.prezime
+        user.datumRodjenja = this.datumRodjenja
+        user.mailRukovodioca = this.mailRukovodioca
+        user.telefon = this.telefon
+        user.idInstitucije = this.idInstitucije
+        user.pregledPodnetih = ""
+
         this.userService.register(user).then((resp) =>{
-            alert("Dodat korisnik")
+            alert("Uspesno dodat rukovodioc")
         })
         .catch(()=>{
-            alert("error - user nije dodat")
+            alert("Greska - rukovodioc nije dodat")
         })
     }
 

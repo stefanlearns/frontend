@@ -16,7 +16,7 @@
             <tr>
                 <td>Korisnicko ime:</td>
                 <td>
-                <input type="password" name="username" [(ngModel)]="username" />
+                <input type="text" name="username" [(ngModel)]="username" />
                 </td>
             </tr>
             <tr>
@@ -25,10 +25,34 @@
                 <input type="password" name="lozinka" [(ngModel)]="lozinka" />
                 </td>
             </tr>
-
-            Dalje treba sva ostala polja, s tim sto instituciju bira iz select liste
+            <tr>
+                <td>Datum rodjenja:</td>
+                <td>
+                <input type="text" name="datumRodjenja" [(ngModel)]="datumRodjenja" />
+                </td>
+            </tr>
+            <tr>
+                <td>Mail:</td>
+                <td>
+                <input type="text" name="mailRukovodioca" [(ngModel)]="mailRukovodioca" />
+                </td>
+            </tr>
+            <tr>
+                <td>Telefon:</td>
+                <td>
+                <input type="text" name="telefon" [(ngModel)]="telefon" />
+                </td>
+            </tr>
+            <tr>
+                <td>ID institucije:</td>
+                <td>
+                <input type="text" name="idInstitucije" [(ngModel)]="idInstitucije" />
+                </td>
+            </tr>
+           
+            Treba input polje za nstituciju koju bira iz select liste
             <br>
-            Svi Rukovodioci ce biti useri, a mi cemo rucno uneti jednog sa username admin i lozinkom lozinka123 u bazu
+            Svi Rukovodioci ce biti useri, a mi cemo rucno uneti jednog sa username admin i lozinkom admin246 u bazu
             <br>
             Ukoliko se uloguje sa admin sifrom ide na admin stranu
             <br>

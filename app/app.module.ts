@@ -13,6 +13,10 @@ import { AllusersComponent } from './allusers/allusers.component';
 import { AllsalesComponent } from './allsales/allsales.component';
 import { UploadsComponent } from './uploads/uploads.component';
 import { UploadFilesComponent } from './upload-files/upload-files.component';
+import { OblastComponent } from './oblast/oblast.component';
+import { InstitutionComponent } from './institution/institution.component';
+import { EditoblastComponent } from './editoblast/editoblast.component';
+import { EditinstitutionComponent } from './editinstitution/editinstitution.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +29,10 @@ import { UploadFilesComponent } from './upload-files/upload-files.component';
     AllsalesComponent,
     UploadsComponent,
     UploadFilesComponent,
+    OblastComponent,
+    InstitutionComponent,
+    EditoblastComponent,
+    EditinstitutionComponent,
   ],
   imports: [
     BrowserModule,

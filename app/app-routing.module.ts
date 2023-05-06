@@ -8,6 +8,10 @@ import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
 import { UploadsComponent } from './uploads/uploads.component';
 import { UploadFilesComponent } from './upload-files/upload-files.component';
+import { OblastComponent } from './oblast/oblast.component';
+import { InstitutionComponent } from './institution/institution.component';
+import { EditoblastComponent } from './editoblast/editoblast.component';
+import { EditinstitutionComponent } from './editinstitution/editinstitution.component';
 
 const routes: Routes = [
   {path: "", component: LoginComponent},
@@ -18,7 +22,10 @@ const routes: Routes = [
   {path: "allsales", component: AllsalesComponent},
   {path: "uploads", component: UploadsComponent},
   {path: "upload-files", component: UploadFilesComponent},
-
+  {path: "oblast", component: OblastComponent},
+  {path: "institution", component: InstitutionComponent},
+  {path: "editoblast", component: EditoblastComponent},
+  {path: "editinstitution", component: EditinstitutionComponent}
 ];
 
 @NgModule({
